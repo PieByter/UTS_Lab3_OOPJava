@@ -18,7 +18,7 @@ public class Matematika {
     }
 
     public void setSudut(double sudut) {
-        this.sudut = sudut;
+        this.sudut = sudut; // Sudut boleh bernilai negatif dan positif
     }
 
     public double getTinggi() {
@@ -26,6 +26,9 @@ public class Matematika {
     }
 
     public void setTinggi(double tinggi) {
+        if (tinggi < 0) {
+            throw new IllegalArgumentException("Tinggi tidak boleh negatif!");
+        }
         this.tinggi = tinggi;
     }
 

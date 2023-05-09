@@ -35,6 +35,9 @@ public class Fisika extends Matematika {
     }
 
     public void setMassa(double massa) {
+        if (massa < 0) {
+            throw new IllegalArgumentException("Massa tidak boleh negatif!");
+        }
         this.massa = massa;
     }
 
@@ -43,6 +46,9 @@ public class Fisika extends Matematika {
     }
 
     public void setDiameter(double diameter) {
+        if (diameter < 0) {
+            throw new IllegalArgumentException("Diameter tidak boleh negatif!");
+        }
         this.diameter = diameter;
     }
 
@@ -51,6 +57,9 @@ public class Fisika extends Matematika {
     }
 
     public void setKecepatan(double kecepatan) {
+        if (kecepatan < 0) {
+            throw new IllegalArgumentException("Kecepatan tidak boleh negatif!");
+        }
         this.kecepatan = kecepatan;
     }
 
@@ -59,6 +68,9 @@ public class Fisika extends Matematika {
     }
 
     public void setViskositas(double viskositas) {
+        if (viskositas < 0) {
+            throw new IllegalArgumentException("Viskositas tidak boleh negatif!");
+        }
         this.viskositas = viskositas;
     }
 
