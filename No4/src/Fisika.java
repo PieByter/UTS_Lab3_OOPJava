@@ -4,7 +4,7 @@ public class Fisika extends Matematika {
     private double kecepatan;
     private double viskositas;
 
-    // Overloading & Overriding Constructor
+    // Overloading & Super Constructor
     public Fisika() {
         super();
         this.massa = 0;
